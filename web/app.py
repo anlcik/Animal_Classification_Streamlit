@@ -6,7 +6,7 @@ from tensorflow import keras
 from PIL import Image
 
 # modelimizi yükledik
-model = tf.keras.saving.load_model("model.hdf5")
+model = tf.keras.saving.load_model("model/model.hdf5")
 
 # class isimlerimizi değişkene atadık
 class_names = ['at', 'fil', 'inek', 'kedi', 'kelebek', 'kopek', 'koyun', 'orumcek', 'sincap', 'tavuk']
