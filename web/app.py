@@ -50,37 +50,37 @@ if uploaded_img is not None:
     st.divider()
 
     # sonucu ekrana yazdırdık
-    st.text("Bence, bu bir {}.".format(result))
+    st.subheader("Bence, bu bir :red[{}].".format(result))
 
     # sonuçtaki hayvana göre hayvan resmini gösterdik
     with col2:
         if result == "at":
-            result_img = Image.open("images/at.jpeg")
+            result_img = Image.open("./web/images/at.jpeg")
             st.image(result_img.resize((224,224)))
         elif result == "fil":
-            result_img = Image.open("images/fil.jpeg")
+            result_img = Image.open("./web/images/fil.jpeg")
             st.image(result_img.resize((224,224)))
         elif result == "inek":
-            result_img = Image.open("images/inek.jpeg")
+            result_img = Image.open("./web/images/inek.jpeg")
             st.image(result_img.resize((224,224)))
         elif result == "kedi":
-            result_img = Image.open("images/kedi.jpeg")
+            result_img = Image.open("./web/images/kedi.jpeg")
             st.image(result_img.resize((224,224)))
         elif result == "kelebek":
-            result_img = Image.open("images/kelebek.png")
+            result_img = Image.open("./web/images/kelebek.png")
             st.image(result_img.resize((224,224)))
         elif result == "kopek":
-            result_img = Image.open("images/kopek.jpeg")
+            result_img = Image.open("./web/images/kopek.jpeg")
             st.image(result_img.resize((224,224)))
         elif result == "koyun":
-            result_img = Image.open("images/koyun.jpg")
+            result_img = Image.open("./web/images/koyun.jpg")
             st.image(result_img.resize((224,224)))
         elif result == "orumcek":
-            result_img = Image.open("images/orumcek.jpg")
+            result_img = Image.open("./web/images/orumcek.jpg")
             st.image(result_img.resize((224,224)))
         elif result == "sincap":
-            result_img = Image.open("images/sincap.jpeg")
+            result_img = Image.open("./web/images/sincap.jpeg")
             st.image(result_img.resize((224,224)))
         else:
-            result_img = Image.open("images/tavuk.jpeg")
+            result_img = Image.open("./web/images/tavuk.jpeg")
             st.image(result_img.resize((224,224)))
